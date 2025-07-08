@@ -22,13 +22,13 @@ const Navbar = () => {
 
   const navBackground = mounted
     ? isScrolled
-      ? 'bg-black shadow-lg backdrop-blur-md'
-      : 'bg-black backdrop-blur-md'
+      ? 'bg-black/90 shadow-lg backdrop-blur-md'
+      : 'bg-transparent backdrop-blur-sm'
     : 'bg-transparent';
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${navBackground}`}
+      className={`fixed w-full z-50 transition-all duration-300 ${navBackground} ${!isScrolled ? 'border-b border-white/10' : ''}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
@@ -85,7 +85,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div
-          className="md:hidden bg-black/95 backdrop-blur-sm"
+          className={`md:hidden ${isScrolled ? 'bg-black/95' : 'bg-black/80'} backdrop-blur-md border-t border-white/10`}
         >
           <div className="px-4 pt-4 pb-6 space-y-3">
             <motion.a

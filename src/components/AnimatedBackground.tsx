@@ -42,12 +42,15 @@ const AnimatedBackground = ({ imageUrl, children }: AnimatedBackgroundProps) => 
         />
 
         <div
-          className={`absolute inset-0 bg-cover bg-center shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] transition-all duration-700 ${
+          className={`absolute inset-0 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] transition-all duration-700 ${
             imageLoaded ? 'opacity-100' : 'opacity-0'
           }`}
           style={{
             backgroundImage: `url("${imageUrl}")`,
-            backgroundRepeat: 'repeat',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'fixed',
             filter: 'contrast(1.1) brightness(1.1)',
             willChange: 'transform',
             transform: 'translateZ(0)',

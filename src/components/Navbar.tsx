@@ -23,8 +23,8 @@ const Navbar = () => {
   const navBackground = mounted
     ? isScrolled
       ? 'bg-black/90 shadow-lg backdrop-blur-md'
-      : 'bg-transparent backdrop-blur-sm'
-    : 'bg-transparent';
+      : 'bg-black/40 backdrop-blur-sm'
+    : 'bg-black/40';
 
   return (
     <nav
@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <a href="/" className="text-white hover:text-gray-200 transition-colors font-serif">
+            <a href="/" className="text-white hover:text-gray-200 transition-colors font-serif drop-shadow-lg">
               <span className="text-base sm:text-lg font-medium">GOGOL•S</span>
               <span className="hidden sm:inline mx-3 text-gray-400">|</span>
               <span className="hidden sm:inline text-base sm:text-lg">Grota Solna & Pensjonat</span>
@@ -46,7 +46,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="/pensjonat"
-              className={`transition-colors duration-300 ${location.pathname === '/pensjonat' ? 'text-blue-300' : 'text-white hover:text-blue-300'}`}
+              className={`transition-colors duration-300 drop-shadow-lg ${location.pathname === '/pensjonat' ? 'text-blue-300' : 'text-white hover:text-blue-300'}`}
             >
               Pensjonat
             </motion.a>
@@ -54,7 +54,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="/grotasolna"
-              className={`transition-colors duration-300 ${location.pathname === '/grotasolna' ? 'text-red-300' : 'text-white hover:text-red-300'}`}
+              className={`transition-colors duration-300 drop-shadow-lg ${location.pathname === '/grotasolna' ? 'text-red-300' : 'text-white hover:text-red-300'}`}
             >
               Grota Solna
             </motion.a>
@@ -74,7 +74,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-gray-200"
+              className="text-white hover:text-gray-200 drop-shadow-lg"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

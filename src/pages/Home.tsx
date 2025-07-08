@@ -15,9 +15,9 @@ const Home = () => {
         className="relative h-screen"
         style={{
           backgroundImage: `url("/images/bg.jpg")`,
-          backgroundSize: 'cover',
+          backgroundSize: 'auto',
           backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
+          backgroundRepeat: 'repeat',
           backgroundAttachment: 'fixed',
           filter: 'contrast(1.1) brightness(1.1)',
         }}

@@ -32,7 +32,7 @@ const Footer = () => {
                 <MapPin size={20} className="mr-2 mt-1 flex-shrink-0" />
                 <div>
                   <div className="mb-6">
-                    <p className="font-serif font-semibold text-red-500 mb-1">GROTA SOLNA</p>
+                    <p className="font-serif font-semibold text-red-500 mb-1">GROTA SOLNA & SAUNA</p>
                     <p>ul. Kamieńskiego 221/U1</p>
                     <p>51-126 Wrocław</p>
                     <a href="tel:+48533541114" className="flex items-center group hover:text-primary transition-colors mt-2">
@@ -64,7 +64,7 @@ const Footer = () => {
                 <p>Wymeldowanie: 11:00</p>
               </div>
               <div className="p-4 bg-gray-800/50 rounded-lg">
-                <p className="font-serif font-semibold mb-2">Grota Solna:</p>
+                <p className="font-serif font-semibold mb-2">Grota Solna & Sauna:</p>
                 <p>Poniedziałek - Piątek: 10:00 – 21:00</p>
                 <p>Sobota – Niedziela: 11:00 – 20:00</p>
               </div>
@@ -94,7 +94,7 @@ const Footer = () => {
                 <Marker position={grotaPosition} icon={customIcon}>
                   <Popup>
                     <div className="font-serif">
-                      <p className="font-semibold text-red-500">GROTA SOLNA</p>
+                      <p className="font-semibold text-red-500">GROTA SOLNA & SAUNA</p>
                       <p>ul. Kamieńskiego 221/U1</p>
                       <p>51-126 Wrocław</p>
                     </div>
@@ -117,7 +117,15 @@ const Footer = () => {
                 onClick={() => window.open('https://maps.google.com/?q=ul.+Kamieńskiego+221/U1,+Wrocław')}
               >
                 <div className="w-3 h-3 bg-red-500 rounded-full group-hover:animate-pulse"></div>
-                <span className="group-hover:text-white">Grota Solna - ul. Kamieńskiego 221/U1</span>
+                <p className="text-white">
+                  <span className="group-hover:text-white">Grota Solna & Sauna - ul. Kamieńskiego 221/U1</span>
+                </p>
+                <p className="text-white">
+                  <span className="group-hover:text-white">51-577 Wrocław</span>
+                </p>
+                <p className="text-white">
+                  <span className="group-hover:text-white">tel. +48 571 376 456</span>
+                </p>
               </div>
               <div 
                 className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-800 transition-colors cursor-pointer group"
@@ -154,7 +162,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-gray-700/50 text-center">
           <p className="text-gray-400">
-            &copy; {new Date().getFullYear()} Gogol.s - Pensjonat i Grota Solna. Wszelkie prawa zastrzeżone.{' '}
+            &copy; {new Date().getFullYear()} Gogol.s - Pensjonat i Grota Solna & Sauna. Wszelkie prawa zastrzeżone.{' '}
             <a href="/admin.html" className="text-primary hover:text-primary-hover transition-colors">
               Panel
             </a>

@@ -35,8 +35,6 @@ const Navbar = () => {
           <div className="flex items-center">
             <a href="/" className="text-white hover:text-gray-200 transition-colors font-serif drop-shadow-lg">
               <span className="text-base sm:text-lg font-medium">GOGOL•S</span>
-              <span className="hidden sm:inline mx-3 text-gray-400">|</span>
-              <span className="hidden sm:inline text-base sm:text-lg">Grota Solna & Pensjonat</span>
             </a>
           </div>
 
@@ -56,7 +54,7 @@ const Navbar = () => {
               href="/grotasolna"
               className={`transition-colors duration-300 drop-shadow-lg ${location.pathname === '/grotasolna' ? 'text-red-300' : 'text-white hover:text-red-300'}`}
             >
-              Grota Solna
+              Grota Solna & Sauna
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.05 }}
@@ -104,7 +102,7 @@ const Navbar = () => {
               href="/grotasolna"
               className={`${location.pathname === '/grotasolna' ? 'bg-primary text-white' : 'text-white'} block px-3 py-2 rounded-md text-base font-medium hover:bg-primary hover:text-white transition-colors`}
             >
-              Grota Solna
+              Grota Solna & Sauna
             </motion.a>
             <motion.a
               initial={{ x: -20, opacity: 0 }}

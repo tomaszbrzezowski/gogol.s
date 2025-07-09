@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Phone, Mail, MapPin, X } from 'lucide-react';
+import { Phone, Mail, MapPin, X, Calendar } from 'lucide-react';
 
 interface GrotaAlertModalProps {
   isOpen: boolean;
@@ -30,43 +30,38 @@ const GrotaAlertModal: React.FC<GrotaAlertModalProps> = ({ isOpen, onClose }) =>
               <X size={24} />
             </button>
 
-            <div className="text-center mb-6">
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">Rezerwacja w Grocie Solnej</h2>
-              <p className="text-gray-600">
-                Aby zarezerwować seans, skontaktuj się z nami:
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <a
-                href="tel:+48533541114"
-                className="flex items-center p-4 bg-red-50 rounded-lg hover:bg-red-100 transition-colors group"
-              >
-                <Phone className="h-6 w-6 text-red-500 mr-3 group-hover:scale-110 transition-transform" />
-                <div>
-                  <p className="font-medium text-red-900">+48 533 541 114</p>
-                  <p className="text-sm text-red-600">Zadzwoń do nas</p>
+            <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <div className="sm:flex sm:items-start">
+                <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
+                  <Calendar className="h-6 w-6 text-red-600" />
                 </div>
-              </a>
-
-              <a
-                href="mailto:gogol.s@wp.pl"
-                className="flex items-center p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors group"
-              >
-                <Mail className="h-6 w-6 text-green-500 mr-3 group-hover:scale-110 transition-transform" />
-                <div>
-                  <p className="font-medium text-green-900">gogol.s@wp.pl</p>
-                  <p className="text-sm text-green-600">Wyślij email</p>
-                </div>
-              </a>
-
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="flex items-start">
-                  <MapPin className="h-6 w-6 text-gray-500 mr-3 flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-medium text-gray-900">Grota Solna Gogol's</p>
-                    <p className="text-gray-600">ul. Kamieńskiego 221/U1</p>
-                    <p className="text-gray-600">51-126 Wrocław</p>
+                <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-2">Rezerwacja w Grocie Solnej & Saunie</h2>
+                  <div className="mt-2">
+                    <p className="text-lg text-gray-800 mb-6">
+                      Rezerwacje dostępne <span className="font-bold text-red-600">wyłącznie telefonicznie</span>
+                    </p>
+                    
+                    <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+                      <div className="flex items-center">
+                        <Phone className="h-6 w-6 text-red-600 mr-3" />
+                        <div>
+                          <p className="font-bold text-red-600 text-xl">+48 571 376 456</p>
+                          <p className="text-sm text-red-600">Grota Solna & Sauna - Zadzwoń teraz</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                      <div className="flex items-start">
+                        <MapPin className="h-6 w-6 text-gray-500 mr-3 flex-shrink-0 mt-1" />
+                        <div>
+                          <p className="font-medium text-gray-900">Grota Solna & Sauna Gogol's</p>
+                          <p className="text-gray-600">ul. Kamieńskiego 221/U1</p>
+                          <p className="text-gray-600">51-577 Wrocław</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

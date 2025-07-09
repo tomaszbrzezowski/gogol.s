@@ -22,12 +22,12 @@ export const sendConfirmationEmail = async (reservation: SaltCaveReservation | M
   const isSaltCave = 'time' in reservation;
   
   const subject = isSaltCave
-    ? 'Potwierdzenie rezerwacji - Grota Solna Gogol\'s'
+    ? 'Potwierdzenie rezerwacji - Grota Solna & Sauna Gogol\'s'
     : 'Potwierdzenie rezerwacji - Pensjonat Gogol\'s';
 
   const content = isSaltCave
     ? `
-      <h2>Potwierdzenie rezerwacji w Grocie Solnej</h2>
+      <h2>Potwierdzenie rezerwacji w Grocie Solnej & Saunie</h2>
       <p>Drogi Kliencie,</p>
       <p>Twoja rezerwacja została potwierdzona. Szczegóły:</p>
       <ul>

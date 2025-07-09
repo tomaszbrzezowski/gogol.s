@@ -10,43 +10,43 @@ interface QA {
 const qaDatabase: QA[] = [
   {
     question: "Jakie są korzyści z korzystania z groty solnej?",
-    answer: "Grota solna oferuje wiele korzyści zdrowotnych:\n\n• Wzmocnienie odporności poprzez minerały jak jod i magnez\n• Poprawa kondycji skóry dzięki właściwościom antyseptycznym\n• Redukcja stresu i napięcia nerwowego\n• Wsparcie dla układu krążenia\n\nRegularne seanse mogą znacząco poprawić Twoje zdrowie i samopoczucie."
+    answer: "Grota solna & sauna oferuje wiele korzyści zdrowotnych:\n\n• Wzmocnienie odporności poprzez minerały jak jod i magnez\n• Poprawa kondycji skóry dzięki właściwościom antyseptycznym\n• Redukcja stresu i napięcia\n• Wspomaganie leczenia chorób układu oddechowego\n• Poprawa krążenia krwi\n• Leczenie alergii i problemów skórnych\n\nRegularne sesje w grocie solnej & saunie mogą znacząco poprawić Twoje zdrowie i samopoczucie."
   },
   {
     question: "Jak się ubrać do groty solnej?",
     answer: "Do groty solnej zalecamy:\n\n• Wygodne, przewiewne ubrania z naturalnych tkanin\n• Białe skarpetki (wymagane ze względów higienicznych)\n\nPrzed wizytą warto:\n• Wziąć prysznic\n• Unikać intensywnych kosmetyków"
   },
   {
-    question: "Jak długo trwa seans w grocie solnej?",
-    answer: "Standardowy seans w grocie solnej trwa około 45 minut. To optymalny czas, który pozwala w pełni skorzystać z dobroczynnych właściwości mikroklimatu bogatego w minerały. Już jedna sesja może przynieść uczucie odprężenia i poprawić samopoczucie."
+    question: "Jak długo trwa seans w grocie solnej & saunie?",
+    answer: "Standardowy seans w grocie solnej & saunie trwa około 45 minut. To optymalny czas, który pozwala w pełni skorzystać z dobroczynnych właściwości mikroklimatu bogatego w minerały. Już jedna sesja może przynieść uczucie odprężenia i poprawę samopoczucia."
   },
   {
     question: "Jakie są przeciwwskazania do korzystania z groty solnej?",
     answer: "Osoby z przewlekłymi chorobami serca, nadciśnieniem, problemami oddechowymi czy alergiami wziewnymi powinny skonsultować się z lekarzem przed wizytą w grocie solnej."
   },
   {
-    question: "Czy dzieci mogą korzystać z groty solnej?",
-    answer: "Tak, dzieci mogą korzystać z groty solnej! Seanse wspierają ich układ odpornościowy, pomagają w leczeniu schorzeń układu oddechowego i łagodzą objawy alergii. Nasza grota jest przystosowana dla dzieci, oferując kąciki zabaw. Zalecamy konsultację z pediatrą przed pierwszą wizytą."
+    question: "Kto może korzystać z groty solnej & sauny?",
+    answer: "Grota solna & sauna jest bezpieczna dla większości osób. Szczególnie polecamy ją osobom cierpiącym na problemy z układem oddechowym, alergikom, osobom z problemami skórnymi oraz tym, którzy chcą się zrelaksować i poprawić odporność. Jednak przed wizytą zalecamy skonsultować się z lekarzem przed wizytą w grocie solnej & saunie."
   },
   {
-    question: "Jak często można korzystać z groty solnej?",
-    answer: "Częstotliwość wizyt zależy od potrzeb:\n\n• Profilaktyka i relaks: raz w tygodniu\n• Wsparcie w leczeniu: 2-3 seanse tygodniowo\n• Intensywna terapia: seria 10-15 seansów co drugi dzień\n\nZawsze warto skonsultować się z lekarzem przed rozpoczęciem regularnych sesji."
+    question: "Ile kosztuje seans w grocie solnej & saunie?",
+    answer: "Oferujemy różne opcje cenowe:\n• Bilet normalny (45 min) - 21 zł\n• Bilet ulgowy (45 min) - 17 zł\n• Karnet normalny (10 wejść) - 180 zł\n• Karnet ulgowy (10 wejść) - 140 zł\n• Wynajem prywatny (45 min, do 10 osób) - 180 zł\n\nDzieci poniżej 3 lat mają wstęp bezpłatny!"
   },
   {
-    question: "Czy przed wizytą w grocie solnej trzeba się specjalnie przygotować?",
-    answer: "Przygotowanie jest proste:\n\n• Weź prysznic przed seansem\n• Unikaj intensywnych kosmetyków i perfum\n• Ubierz wygodne, przewiewne ubrania\n• Zabierz białe skarpetki lub skorzystaj z naszych jednorazowych ochraniaczy"
+    question: "Czy przed wizytą w grocie solnej & saunie trzeba się specjalnie przygotować?",
+    answer: "Przygotowanie jest bardzo proste! Po prostu przyjdź w wygodnym ubraniu. Zalecamy lekkie, przewiewne ubrania. Nie trzeba zabierać ręczników ani innych akcesoriów - wszystko zapewniamy na miejscu."
   },
   {
-    question: "Czy w grocie solnej jest zimno?",
-    answer: "W grocie solnej panuje przyjemna temperatura 18-24°C, idealna do relaksu. Zapewniamy lekkie koce dla osób wrażliwych na temperaturę, aby zagwarantować pełen komfort podczas seansu."
+    question: "Czy w grocie solnej & saunie jest zimno?",
+    answer: "W grocie solnej & saunie panuje przyjemna temperatura 18-24°C, idealna do relaksu. Zapewniamy lekkie koce dla osób wrażliwych na temperaturę, aby zagwarantować pełen komfort podczas seansu."
   },
   {
-    question: "Czy można korzystać z groty solnej w ciąży?",
-    answer: "Grota solna może przynieść wiele korzyści w czasie ciąży, jak wzmocnienie odporności i redukcja obrzęków. Jednak zalecamy konsultację z lekarzem prowadzącym, szczególnie w przypadku ciąży zagrożonej lub problemów z tarczycą."
+    question: "Czy grota solna & sauna jest bezpieczna dla kobiet w ciąży?",
+    answer: "Grota solna & sauna może przynieść wiele korzyści w czasie ciąży, jak wzmocnienie odporności i redukcja obrzęków. Jednak zalecamy konsultację z lekarzem prowadzącym, szczególnie w przypadku ciąży zagrożonej lub problemów zdrowotnych."
   },
   {
-    question: "Czy grota solna pomaga na problemy skórne?",
-    answer: "Tak! Grota solna może pomóc przy problemach skórnych:\n\n• Łagodzi trądzik i egzemę\n• Wspomaga leczenie łuszczycy\n• Oczyszcza i ujędrnia skórę\n• Spowalnia procesy starzenia\n\nRegularne seanse mogą znacząco poprawić kondycję Twojej skóry."
+    question: "Czy grota solna & sauna pomaga na problemy skórne?",
+    answer: "Tak! Grota solna & sauna może pomóc przy problemach skórnych:\n\n• Łagodzi trądzik i egzemę\n• Wspomaga leczenie łuszczycy\n• Oczyszcza i ujędrnia skórę\n• Spowalnia procesy starzenia\n\nRegularne seanse mogą znacząco poprawić kondycję skóry."
   }
 ];
 

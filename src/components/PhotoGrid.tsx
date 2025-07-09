@@ -37,8 +37,8 @@ const PhotoGrid = ({ images }: PhotoGridProps) => {
           >
             <img
               src={image}
-              alt={`Grota solna ${index + 1}`}
-              className="w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-300"
+              alt={`Grota Solna & Sauna ${index + 1}`}
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
               <span className="px-4 py-2 bg-white/90 text-gray-900 rounded-full font-serif font-medium transform scale-90 group-hover:scale-100 transition-transform duration-300">

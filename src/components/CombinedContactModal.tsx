@@ -47,7 +47,7 @@ const CombinedContactModal: React.FC<CombinedContactModalProps> = ({ isOpen, onC
                 <Phone className="h-6 w-6 text-red-500 mr-3 group-hover:scale-110 transition-transform" />
                 <div>
                   <p className="font-medium text-red-900">+48 533 541 114</p>
-                  <p className="text-sm text-red-600">Grota Solna - Zadzwoń</p>
+                  <p className="text-sm text-red-600">Grota Solna & Sauna - Zadzwoń</p>
                 </div>
               </a>
               
@@ -77,9 +77,10 @@ const CombinedContactModal: React.FC<CombinedContactModalProps> = ({ isOpen, onC
                 <div className="flex items-start">
                   <MapPin className="h-6 w-6 text-gray-500 mr-3 flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-medium text-gray-900">Grota Solna Gogol's</p>
+                    <p className="font-medium text-gray-900">Grota Solna & Sauna Gogol's</p>
                     <p className="text-gray-600">ul. Kamieńskiego 221/U1</p>
-                    <p className="text-gray-600">51-126 Wrocław</p>
+                    <p className="text-gray-600">51-577 Wrocław</p>
+                    <p className="text-gray-600">tel. +48 571 376 456</p>
                   </div>
                 </div>
               </div>

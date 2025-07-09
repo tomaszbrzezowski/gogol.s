@@ -12,8 +12,9 @@ const Home = () => {
     <div>
       {/* Hero Section */}
       <section 
-        className="relative h-screen"
+        className="relative min-h-screen"
         style={{
+          height: 'calc(100vh + 4rem)',
           backgroundImage: `url("/images/bg.jpg")`,
           backgroundSize: 'auto',
           backgroundPosition: 'center',
@@ -23,7 +24,7 @@ const Home = () => {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/40" />
-        <div className="relative h-full flex items-center justify-center text-center text-white">
+        <div className="relative h-full flex items-center justify-center text-center text-white pt-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -97,8 +98,8 @@ const Home = () => {
               />
               <FeatureCard
                 icon={<Flower2 />}
-                title="Terapia w Grocie Solnej"
-                description="Naturalne uzdrawianie w naszej grocie solnej"
+                title="Terapia w Grocie Solnej & Saunie"
+                description="Naturalne uzdrawianie w naszej grocie solnej & saunie"
               />
               <FeatureCard
                 icon={<Clock />}

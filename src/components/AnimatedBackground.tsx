@@ -21,7 +21,7 @@ const AnimatedBackground = ({ imageUrl, children }: AnimatedBackgroundProps) => 
   }, [imageUrl]);
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden" style={{ height: 'calc(100vh + 4rem)' }}>
       <motion.div
         initial={{ scale: 1.1, opacity: 0 }}
         animate={{ 
@@ -63,7 +63,7 @@ const AnimatedBackground = ({ imageUrl, children }: AnimatedBackgroundProps) => 
           className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/40"
         />
       </motion.div>
-      <div className="relative h-full">
+      <div className="relative h-full pt-16">
         {children}
       </div>
     </section>

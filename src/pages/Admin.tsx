@@ -292,7 +292,7 @@ const Admin = () => {
           <div key={stat.type} className="bg-white p-6 rounded-lg shadow-lg">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-lg font-semibold">
-                {stat.type === 'salt_cave' ? 'Grota Solna' : 'Pensjonat'}
+                {stat.type === 'salt_cave' ? 'Grota Solna & Sauna' : 'Pensjonat'}
               </h3>
               <div className="text-2xl">
                 {stat.type === 'salt_cave' ? '🧂' : '🏨'}
@@ -328,7 +328,7 @@ const Admin = () => {
             className="flex items-center space-x-2 p-3 bg-primary text-white rounded-lg hover:bg-primary-hover transition-colors"
           >
             <Clock size={20} />
-            <span>Grota Solna</span>
+            <span>Grota Solna & Sauna</span>
           </button>
           <button
             onClick={() => setActiveTab('motel')}
@@ -560,7 +560,7 @@ const Admin = () => {
               >
                 <div className="flex items-center space-x-2">
                   <Clock size={20} />
-                  <span>Grota Solna</span>
+                  <span>Grota Solna & Sauna</span>
                 </div>
               </button>
               <button

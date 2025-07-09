@@ -22,7 +22,7 @@ const Motel = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="pt-16">
+    <div>
       {/* Floating Logo */}
       <div className="fixed bottom-8 left-8 z-50">
         <div className="relative w-24 h-24">
